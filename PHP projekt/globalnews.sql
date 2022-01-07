@@ -280,7 +280,7 @@ INSERT INTO `countries` (`id`, `country_code`, `country_name`) VALUES
 -- Table structure for table `news`
 --
 
-CREATE TABLE `news` (
+CREATE TABLE `globalnews` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
@@ -293,9 +293,10 @@ CREATE TABLE `news` (
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`id`, `title`, `description`, `date`, `picture`, `archive`) VALUES
-(1, 'ZBOG OVAKVIH STVARI MESSI JE NAJVEĆI � to bi napravio Ronaldo u ovakvoj situaciji?', 'Golove su za Barcu postigli Luis Suarez (29., 47.), Paulinho (41., 75.), ali je utakmica protekla u znaku promašaja Lea Messija. Messi je pogodio dvije vratnice, jednu gredu, imao je još tri čiste prilike, a u 69. minuti mu je vratar Ruben Ramirez obranio i penal. Vratnicu su zatresli i Suarez i Jordi Alba, a Urugvajcu je u 45. minuti poništen regularni gol tako da je momčad iz La Corune glatko mogla izgubiti i s dvocifrenim rezultatom.\r\n \r\nIako Messiju jučer nije išlo, premda nije uspijevao pogoditi mrežu Deportiva, još jednom, po tko zna koji put, pokazao je da je zaista jedan od najvećih ikad. Igrala se 28. minuta utakmice na Camp Nou, golova još nije bilo kad je nakon jednog fantastičnog proigravanja Argentinac izašao sam pred vratara gostiju. Messi je mogao birati gdje će gađati, takve šanse on ne promašuje, no odlučio je loptu dodati Suarezu koji ju je samo gurnuo u praznu mrežu.', '2017-12-18 12:22:35', '1-93.jpg', 'N'),
-(2, '&quot;EGIPATSKI MESSI&quot;, LEGENDA LIVERPOOLA Kako mu je to uspjelo za samo četiri mjeseca?', 'Golove su za Barcu postigli Luis Suarez (29., 47.), Paulinho (41., 75.), ali je utakmica protekla u znaku promašaja Lea Messija. Messi je pogodio dvije vratnice, jednu gredu, imao je još tri čiste prilike, a u 69. minuti mu je vratar Ruben Ramirez obranio i penal. Vratnicu su zatresli i Suarez i Jordi Alba, a Urugvajcu je u 45. minuti poništen regularni gol tako da je momčad iz La Corune glatko mogla izgubiti i s dvocifrenim rezultatom.\r\n \r\nIako Messiju jučer nije išlo, premda nije uspijevao pogoditi mrežu Deportiva, još jednom, po tko zna koji put, pokazao je da je zaista jedan od najvećih ikad. Igrala se 28. minuta utakmice na Camp Nou, golova još nije bilo kad je nakon jednog fantastičnog proigravanja Argentinac izašao sam pred vratara gostiju. Messi je mogao birati gdje će gađati, takve šanse on ne promašuje, no odlučio je loptu dodati Suarezu koji ju je samo gurnuo u praznu mrežu.', '2017-12-18 12:25:40', '2-9.jpg', 'N');
+INSERT INTO `globalnews` (`id`, `title`, `description`, `date`, `picture`, `archive`) VALUES
+(1, 'Man arrested over Piers Morgan death threats', 'After a lengthy investigation, a man has been arrested in relation to online death threats made to TV broadcaster Piers Morgan and his eldest son, Spencer. The individual�s digital devices were seized by police for forensic analysis, the paper said.
+', '2017-12-18 12:22:35', 'pm.jpg', 'N'),
+(2, 'Russian submarine hit British warship � UK MOD;,'A towed sonar array of the Royal Navy�s HMS Northumberland was hit by a Russian submarine 13 months ago, the UK Ministry of Defence has claimed, after British media reported the incident was captured by a documentary film crew.', '2017-12-18 12:25:40', 'ru.jpg', 'N');
 
 -- --------------------------------------------------------
 
@@ -335,7 +336,7 @@ ALTER TABLE `countries`
 --
 -- Indexes for table `news`
 --
-ALTER TABLE `news`
+ALTER TABLE `globalnews`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -356,7 +357,7 @@ ALTER TABLE `countries`
 --
 -- AUTO_INCREMENT for table `news`
 --
-ALTER TABLE `news`
+ALTER TABLE `globalnews`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `users`
